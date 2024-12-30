@@ -13,8 +13,8 @@ resource "aws_security_group" "allow_all_ssh-terraform" {
 
 
   ingress {
-    from_port        = 0
-    to_port          = 0
+    from_port        = 22
+    to_port          = 22
     protocol         = "tcp"
     cidr_blocks      = ["0.0.0.0/0"] # allow for everyone
     ipv6_cidr_blocks = ["::/0"]
